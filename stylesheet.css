@@ -1,0 +1,197 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #000;
+}
+
+.home {
+  background-image: url('images/background.jpeg');
+}
+
+.home div {
+  margin-top: 10%;
+}
+
+.home h1 {
+  color: #fff;
+}
+
+.home body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+.home h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 5em;
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    rgb(107, 96, 150),
+    #000,
+    rgb(107, 96, 150)
+  );
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+  background-repeat: round;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+.header h1 {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  color: #4949a0;
+}
+
+.header h4 {
+  margin-left: 0.5%;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 2%;
+  color: black;
+}
+
+.header img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.about .header h3 {
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
+
+.content {
+  padding: 1%;
+  margin-right: 2%;
+}
+
+.content p {
+  font-size: 1em;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0%;
+  padding: 1;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li p {
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  padding: 5%;
+  font-size: 1em;
+  border: 3px solid #4949a0;
+}
+
+.home .navbar li p {
+  color: #ddd;
+}
+
+.navbar li a {
+  margin-top: 16px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home .navbar li a {
+  color: whitesmoke;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  color: #6565ed;
+}
+
+.navbar .active {
+  color: #6565ed;
+}
+
+.home .navbar .active {
+  color: #6565ed;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: -4%;
+}
+
+.tech {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.tech img {
+  width: 50%;
+  align-self: center;
+}
+
+.tech p {
+  font-size: 1em;
+}
+
+.tech h3 {
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  margin-left: 0%;
+}
+
+.products {
+  font-size: 1em;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.products span {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+.science li {
+  margin: 1%;
+  font-style: italic;
+}
+
+.science a {
+  text-decoration: underline;
+  color: rgb(107, 96, 150);
+}
