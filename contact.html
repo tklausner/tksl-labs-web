@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TKSL Labs</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="util.js"></script>
     <script>
       function sendMail() {
         window.open('mailto:drklausner@hotmail.com?subject=subject&body=body');
@@ -11,7 +17,7 @@
   </head>
 
   <body>
-    <ul class="navbar">
+    <ul class="navbar" id="mobile-nav">
       <li>
         <p>TKSL Labs</p>
       </li>
@@ -20,7 +26,21 @@
       <li><a href="/tech.html">Technology</a></li>
       <li><a href="/products.html">Products</a></li>
       <li><a href="/science.html">Research</a></li>
+      <li><a href="/news.html">News</a></li>
       <li><a class="active" href="/contact.html">Contact</a></li>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="showDropdown()">
+          Contact
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/tech.html">Technology</a>
+          <a href="/products.html">Products</a>
+          <a href="/science.html">Research</a>
+        </div>
+      </div>
     </ul>
 
     <div class="container">
